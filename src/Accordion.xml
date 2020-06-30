@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="mendix.accordion.Accordion" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Native" 
+  xmlns="http://www.mendix.com/widget/1.0/" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+  <name>Accordion</name>
+  <description>Collapsible vertical tab container</description>
+  <icon/>
+  <properties>
+    <propertyGroup caption="General">
+      <property key="ds" type="datasource" required="true" isList="true">
+        <caption>Data Source</caption>
+        <description></description>
+      </property>
+      <property key="header" type="widgets" required="true" dataSource="ds">
+        <caption>Header</caption>
+        <description></description>
+      </property>
+      <property key="body" type="widgets" required="false" dataSource="ds">
+        <caption>Content</caption>
+        <description></description>
+      </property>
+    </propertyGroup>
+  </properties>
+</widget>

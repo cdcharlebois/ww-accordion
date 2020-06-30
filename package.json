@@ -1,0 +1,32 @@
+{
+  "name": "wwaccordion",
+  "widgetName": "Accordion",
+  "version": "1.0.0",
+  "description": "Collapsible vertical tab container",
+  "copyright": "Mendix 2019",
+  "author": "Conner",
+  "config": {
+    "widgetPath": "/Users/conner/mendix/p/FEW_PSNI_20200629-main/widgets",
+    "projectPath": "/Users/conner/mendix/p/FEW_PSNI_20200629-main/"
+  },
+  "packagePath": "mendix",
+  "scripts": {
+    "start": "npm run dev",
+    "build": "pluggable-widgets-tools build:js:native",
+    "dev": "pluggable-widgets-tools start:js:native",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:js:native"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Conner/wwaccordion/issues"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^8.9.2"
+  },
+  "dependencies": {
+    "react-native-collapsible": "^1.5.2"
+  }
+}
