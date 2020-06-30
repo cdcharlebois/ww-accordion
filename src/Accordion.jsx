@@ -21,7 +21,7 @@ export class Accordion extends Component {
     return (
       ds.items ?
         <Lib
-          sections={ds.items ? ds.items : null}
+          sections={ds.items}
           activeSections={this.state.activeSections}
           renderHeader={item => header(item)}
           renderContent={item => body(item)}
