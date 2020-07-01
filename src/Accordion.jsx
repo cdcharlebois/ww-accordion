@@ -26,6 +26,8 @@ export class Accordion extends Component {
           renderHeader={item => header(item)}
           renderContent={item => body(item)}
           onChange={this._updateSections}
+          underlayColor={"transparent"}
+          expandMultiple={true}
         />
         :
         <View>
