@@ -11,13 +11,24 @@
         <caption>Data Source</caption>
         <description></description>
       </property>
-      <property key="header" type="widgets" required="true" dataSource="ds">
-        <caption>Header</caption>
+      <property key="headerClosed" type="widgets" required="true" dataSource="ds">
+        <caption>Header Closed</caption>
+        <description></description>
+      </property>
+      <property key="headerOpen" type="widgets" required="true" dataSource="ds">
+        <caption>Header Open</caption>
         <description></description>
       </property>
       <property key="body" type="widgets" required="false" dataSource="ds">
         <caption>Content</caption>
         <description></description>
+      </property>
+      <property key="attr" type="attribute" required="false" dataSource="ds">
+        <caption>Header</caption>
+        <description></description>
+        <attributeTypes>
+          <attributeType name="String" />
+        </attributeTypes>
       </property>
     </propertyGroup>
   </properties>
