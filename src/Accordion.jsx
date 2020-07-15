@@ -22,36 +22,26 @@ export class Accordion extends Component {
     this._renderHeader = this._renderHeader.bind(this);
   }
 
-  _updateSections = (activeSections) => {
+  _updateSections(activeSections) {
     this.setState({
       activeSections: activeSections
     });
   }
 
-  _renderHeader = (item, index, isActive) => {
-    // const { attr } = this.props;
-    // return (
-    //   <View style={styles.header}>
-    //     <Text style={styles.headerText}>{attr(item).displayValue}</Text>
-    //   </View>
-    // )
+  _renderHeader(item, index, isActive) {
     const { headerOpen, headerClosed } = this.props;
-    if (isActive) {
-      return headerOpen(item)
-    } else {
-      return headerClosed(item)
-    }
+    return isActive ? headerOpen(item) : headerClosed(item)
   }
 
   render() {
     const { ds, body } = this.props;
     return (
-      ds.items ?
+      ds.status === 'available' ?
         <Lib
           sections={ds.items}
           activeSections={this.state.activeSections}
           renderHeader={this._renderHeader}
-          renderContent={(item) => body(item)}
+          renderContent={body}
           onChange={this._updateSections}
           underlayColor={"transparent"}
           expandMultiple={true}
