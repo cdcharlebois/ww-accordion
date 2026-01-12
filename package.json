@@ -24,7 +24,7 @@
     "url": "https://github.com/Conner/wwaccordion/issues"
   },
   "devDependencies": {
-    "@mendix/pluggable-widgets-tools": "^8.9.2"
+    "@mendix/pluggable-widgets-tools": "^11.3.0"
   },
   "dependencies": {
     "react-native-collapsible": "^1.5.2"
